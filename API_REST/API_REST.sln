@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_REST", "API_REST\API_REST.csproj", "{CBF2B89C-4303-4DD9-90BA-DE456D2FED0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelCliente", "HotelCliente\HotelCliente.csproj", "{8E37EE5C-820D-42A3-83A5-78E34639F722}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBF2B89C-4303-4DD9-90BA-DE456D2FED0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF2B89C-4303-4DD9-90BA-DE456D2FED0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF2B89C-4303-4DD9-90BA-DE456D2FED0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF2B89C-4303-4DD9-90BA-DE456D2FED0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E37EE5C-820D-42A3-83A5-78E34639F722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E37EE5C-820D-42A3-83A5-78E34639F722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E37EE5C-820D-42A3-83A5-78E34639F722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E37EE5C-820D-42A3-83A5-78E34639F722}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6700D15-3400-46B1-82F1-1093FBD8D469}
+	EndGlobalSection
+EndGlobal

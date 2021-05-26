@@ -1,0 +1,109 @@
+﻿@model IEnumerable<HotelCliente.Entidades.Reserva>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Reservaciones:</h2>
+
+<div>
+
+    @*<button class="btn btn-primary" href="@Url.Action("Crear", "Reserva")">Crear Reserva</button>*@
+    <a class="btn btn-default" role="button" href="@Url.Action("Crear")">
+        <span class='glyphicon glyphicon-arrow-right' aria-hidden='true'></span> &nbsp;Nueva Reservación
+    </a>
+    <br />
+    <br />
+
+    <table id="consultaReserva" class="table-striped table-bordered" style="width:100%;">
+    </table>
+
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+
+
+
+            $('#consultaReserva').DataTable({
+                 "bSort": false,
+                        "dom": 'lfrtip',
+
+                        "serverSide": true,
+
+                        "processing": false,
+                        "rowHeight": 'auto',
+                        "scrollX": true,
+                        "responsive": false,
+
+                        "ajax": {
+                            "url":
+                                "@Url.Action("consultaReserva")",
+                            "type": "POST",
+
+                        },
+                        "columns": [
+
+
+                            {
+                                "title": "#Reserva",
+                                "data": "Cod_Reserva",
+                                "searchable": true,
+                                "visible": true,
+                                className: 'text-center',
+                            },
+
+                            {
+                                "title": "Sede",
+                                "data": "NombreSede",
+                                "searchable": true,
+                                "visible": true,
+                                className: 'text-center',
+                            },
+
+                            {
+                                "title": "Fecha",
+                                "data": "FechaMuestra",
+                                "searchable": true,
+                                "visible": true,
+
+                                className: 'Item',
+                            },
+
+                            {
+                                "title": "Cedula Cliente",
+                                "data": "Cedula_Cliente",
+                                "searchable": true,
+                                "visible": true,
+                                className: 'text-center',
+                            },
+
+
+                            {
+                                "title": "Forma de Pago",
+                                "data": "Cod_Pago",
+                                "searchable": true,
+                                "visible": true,
+                                className: 'text-center',
+                            },
+
+                            {
+                                "title": "#Personas",
+                                "data": "Cantidad_personas",
+                                "searchable": true,
+                                "visible": true,
+                                className: 'text-center',
+                            },
+
+                        ],
+                        "lengthMenu": [[10, 25, 50, 100], [10, 25, 50, 100]],
+            });
+
+        });
+
+    </script>
+}

@@ -1,0 +1,58 @@
+﻿@model API_REST.Models.Reserva
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reserva</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad_personas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad_personas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente.Celular)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.Celular)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pago.Factura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pago.Factura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sede.Pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sede.Pais)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Cod_Reserva }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
